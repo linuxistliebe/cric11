@@ -24,15 +24,13 @@ ____________|
 ''')
     
     initchoice=int(input("Enter Your Choice -> "))
-
     if initchoice==3:
         exit()
     
     if initchoice==2:
         while 2<3:
             print("linuxistliebe-",end="")
-
-
+            
     if initchoice==1:
         print()
         time.sleep(0.38)
@@ -44,10 +42,10 @@ ____________|
 [4] CAPTAINCY Options
 [5] Jackie-Moggy Trophy
 ''')
-        if not toporder:
-            
-            choice=int(input("Enter Your Choice -> "))
-            if choice==1:
+       
+        choice=int(input("Enter Your Choice -> "))
+        if choice==1:
+            if not toporder:
                 print()
                 print("-TOP ORDER-")
                 for i in range(3):
@@ -63,10 +61,11 @@ ____________|
                     toporderbat.append(ratingbtsmn)
                 print()
                 print(toporder,toporderbat)
-        else:
-            print("(@) TOP ORDER has already been created!")
-            print(toporder,toporderbat)
-            time.sleep(1)
-        
+            else:
+                print("(@) TOP ORDER has already been created!")
+                print(toporder,toporderbat)
+                time.sleep(1)
+    else:
+        print("INVALID Input!")
 
     
